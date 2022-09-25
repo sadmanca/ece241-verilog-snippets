@@ -23,8 +23,10 @@ endmodule
 //-------------------------------------------------
 
 module Hex_TOP(input [4:0] SW, output [6:0] HEX0);
+
     displayXY DXY(.X(SW[1:0]),
                   .Y(SW[3:2]),
                   .Sel(SW[4]),
                   .H(HEX0));
+
 endmodule
